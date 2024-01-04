@@ -24,15 +24,15 @@ public class HealthBarRenderer : MonoBehaviour
 
     private void OnEnable()
     {
-        _health.Render += Render;
+        _health.Render += OnRender;
     }
 
     private void OnDisable()
     {
-        _health.Render -= Render;
+        _health.Render -= OnRender;
     }
 
-    private void Render()
+    private void OnRender()
     {
         if (_coroutine != null)
             StopCoroutine(_coroutine);
