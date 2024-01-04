@@ -22,6 +22,8 @@ public class Ghost : MonoBehaviour
     private float _targetDistance;
     private Transform _currentPoint;
 
+    public Health Health => _health;
+
     private void Start()
     {
         _currentPoint = _points[_currentPointNumber];
