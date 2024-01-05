@@ -1602,7 +1602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _abilityText: {fileID: 611316306}
   _stringAbilityName: Vampire Ability
-  _player: {fileID: 1983253691}
+  _vampireAbility: {fileID: 1983253698}
 --- !u!1 &625206359
 GameObject:
   m_ObjectHideFlags: 0
@@ -4171,6 +4171,22 @@ PrefabInstance:
       propertyPath: m_UpdateMode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7377324457791762694, guid: 3a52bf791027cc54392d4d53b3ac8cb8, type: 3}
+      propertyPath: _cooldown
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7377324457791762694, guid: 3a52bf791027cc54392d4d53b3ac8cb8, type: 3}
+      propertyPath: _distance
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7377324457791762694, guid: 3a52bf791027cc54392d4d53b3ac8cb8, type: 3}
+      propertyPath: _usingTime
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7377324457791762694, guid: 3a52bf791027cc54392d4d53b3ac8cb8, type: 3}
+      propertyPath: _healthEffect
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7826024378667902130, guid: 3a52bf791027cc54392d4d53b3ac8cb8, type: 3}
       propertyPath: m_Size.x
       value: 1.5011306
@@ -4288,8 +4304,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1983253691}
-        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+      - m_Target: {fileID: 1983253698}
+        m_TargetAssemblyTypeName: VampireAbility, Assembly-CSharp
         m_MethodName: UseVampireAbility
         m_Mode: 1
         m_Arguments:
@@ -4423,6 +4439,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 286304787426410533, guid: 3a52bf791027cc54392d4d53b3ac8cb8, type: 3}
   m_PrefabInstance: {fileID: 1812803899}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1983253698 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7377324457791762694, guid: 3a52bf791027cc54392d4d53b3ac8cb8, type: 3}
+  m_PrefabInstance: {fileID: 1812803899}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564e2bf139adc8b45a479d4eb48c6e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1984767833 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1674305437505580235, guid: 6de52511762dd9b4da0b51600d60aab3, type: 3}
