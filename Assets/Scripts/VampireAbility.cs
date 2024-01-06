@@ -36,6 +36,7 @@ public class VampireAbility : MonoBehaviour
     {
         _currentCooldown += Time.deltaTime;
     }
+
     public void UseVampireAbility()
     {
         if (_cooldown <= _currentCooldown && TryGetClosestGhost(out Ghost closestGhost))
